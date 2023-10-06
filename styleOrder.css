@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url('img/bg11.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1, 0.8);
+    border-bottom: 1px solid #423124;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.navbar .logo:hover {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    transition: 0.4s ;
+}
+
+.navbar .logo span {
+    color: #ce9c77;
+}
+
+.navbar .nav-nav a, .shop a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1.3rem;
+}
+
+.navbar .nav-nav a:hover, .shop a:hover {
+    color: #ce9c77;
+}
+
+.navbar .nav-nav a::after, .shop a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #ce9c77;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .nav-nav a:hover::after,
+.shop a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .instagram {
+    color:#fff;
+}
+/* Navbar end */
+
+/* contact */
+.contact {
+    margin-top: 9rem;
+    align-items: center;
+    text-align: center;
+    max-height: rem;
+}
+.contact .row{
+    display: flex;
+    margin-top: 2rem;
+    margin: 2rem 29rem;
+    background-color: #222;
+    border-radius: 4rem;
+}
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 20rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background: #010101;
+    border: 1 px solid #eee ;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    
+}
+
+
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #eee;
+}
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem ;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #ce9c77;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+.contact .row form .btn:hover {
+    color: #010101;
+    transition: 0.4s;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: #f5b587;
+}
+
+.contact p {
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+/* contact end */
+
+/* footer */
+footer {
+    background: #ce9c77;
+    text-align: center;
+    padding: 1rem 0 1rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    bottom: 0;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+footer .sosial {
+    margin: 1rem;
+}
+
+footer .credit p {
+    color: #fff;
+}
+
+footer .credit p a {
+    color: #423124;
+}
+
+
+
+
+
+
+/* Responsive */
+
+/* Laptop */
+@media(max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tab */
+@media(max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }   
+
+    .about .row {
+         flex-wrap: wrap;
+    }
+
+    .menu p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Phone */
+@media(max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+/* Phone 320 */
+@media(max-width: 320px) {
+    html {
+        font-size: 35%;
+    }
+}

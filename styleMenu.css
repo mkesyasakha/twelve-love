@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #010101;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1, 0.8);
+    border-bottom: 1px solid #423124;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.navbar .logo:hover {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    transition: 0.4s ;
+}
+
+.navbar .logo span {
+    color: #ce9c77;
+}
+
+.navbar .nav-nav a, .shop a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1.3rem;
+}
+
+.navbar .nav-nav a:hover, .shop a:hover {
+    color: #ce9c77;
+}
+
+.navbar .nav-nav a::after, .shop a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #ce9c77;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .nav-nav a:hover::after,
+.shop a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .instagram {
+    color:#fff;
+}
+/* Navbar end */
+
+/* Menu */
+.menu {
+    min-height: 100vh;
+    background: url('img/bg12.jpg');
+    padding: 8rem 7% 1.4rem;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    bottom: 0;
+}
+
+.menu h2, .menu h3  {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: #b68e70;
+}
+
+.menu h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+
+}
+
+.menu p, .contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.menu h3 {
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.menu .menu-card img {
+    border-radius: 2rem;
+    align-items: center;
+    width: 80%;
+    outline: 3px solid #0101014b;
+}
+
+.menu .row .menu-card .tittle {
+    margin: 1.5rem auto 0.5rem ;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* main menu */
+.bx-coffee {
+    display: flex;
+    align-items: center;
+    margin: 6rem;
+}
+
+.bx-coffee .icons {
+    text-align: center;
+    margin: 0 20rem;
+}
+
+.bx-coffee .icons h2 {
+    font-weight: 200;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.bx-coffee .icons p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+table {
+    font-size: 1.6rem;
+    width: 100%;
+    display: table;
+}
+
+table, th,td {
+    border: none;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+/* footer */
+/* footer */
+footer {
+    background: #ce9c77;
+    text-align: center;
+    padding: 1rem 0 1rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+footer .sosial {
+    margin: 1rem;
+}
+
+footer .credit p {
+    color: #fff;
+}
+
+footer .credit p a {
+    color: #423124;
+}
+
+
+
+
+
+
+/* Responsive */
+
+/* Laptop */
+@media(max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tab */
+@media(max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }   
+
+    .about .row {
+         flex-wrap: wrap;
+    }
+
+    .menu p {
+        font-size: 1.2rem;
+    }
+
+    .bx-coffee {
+        flex-wrap: wrap;
+    }
+}
+
+/* Phone */
+@media(max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+    .bx-coffee {
+        flex-wrap: wrap;
+    }
+    .bx-coffee .icons p{
+        display: none;
+    }
+}
+
+/* Phone 320 */
+@media(max-width: 320px) {
+    html {
+        font-size: 35%;
+    }
+    .bx-coffee {
+        flex-wrap: wrap;
+        font-size: 25%;
+    }
+
+    .bx-coffee .icons p{
+        display: none;
+    }
+} 
